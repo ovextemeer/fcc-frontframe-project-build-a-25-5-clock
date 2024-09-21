@@ -1,0 +1,78 @@
+html,
+body,
+#root,
+.App {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+.App {
+  font-family: sans-serif;
+  background-color: #1e555c;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.LengthSetting,
+.Break,
+.Session,
+.Timer {
+  display: flex;
+}
+
+.Break,
+.Session {
+  flex-direction: column;
+  align-items: center;
+}
+
+.Break {
+  margin-right: 3rem;
+}
+
+.Session {
+  margin-left: 3rem;
+}
+
+.Timer {
+  flex-direction: column;
+  border: 7px solid #13353a;
+  border-radius: 3rem;
+  padding: 3rem;
+  margin-top: 2rem;
+}
+
+#timer-label {
+  text-align: center;
+}
+
+#time-left {
+  font-size: 3rem;
+}
+
+#break-decrement,
+#break-increment,
+#session-decrement,
+#session-increment,
+#start_stop,
+#reset {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+#break-decrement:hover,
+#break-increment:hover,
+#session-decrement:hover,
+#session-increment:hover,
+#start_stop:hover,
+#reset:hover {
+  cursor: pointer;
+}
